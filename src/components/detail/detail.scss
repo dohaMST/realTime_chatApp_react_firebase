@@ -1,0 +1,99 @@
+.detail{
+    flex: 1;
+    .user{
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-items: center;
+        gap: 1.25rem;
+        padding: 1.87rem 1.25rem;
+        border-bottom: 1px solid #dddddd35;
+        img{
+            height: 6.25rem;
+            width: 6.25rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h2{}
+        p{
+            // background-color: aqua;
+            text-align: center;
+        }
+    }
+    .info{
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        // background-color: red;
+        .option{
+            .title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // background-color: red;
+                span{
+                    text-transform: capitalize;
+                }
+                img{
+                    width: 1.875rem;
+                    height: 1.875rem;
+                    border-radius: 50%;
+                    background-color: rgba(17, 25, 40, 0.3);
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+            .photos{
+                // background-color: red;
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                margin-top: 1.25rem;
+                .photoItem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .photoDetail{
+                        display: flex;
+                        align-items: center;
+                        gap: 1.25rem;
+                        img{
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            border-radius: .4rem;
+                            object-fit: cover;
+                        }
+                        span{
+                            font-size: .8rem;
+                            color: lightgray;
+                            font-weight: 300;
+                        }
+                    }
+                    img.icon{
+                        width: 1.875rem;
+                        height: 1.875rem;
+                        padding: 10px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        background-color: rgba(17, 25, 40, 0.3);
+                    }
+                }
+            }
+        }
+        button{
+            border: none;
+            text-transform: capitalize;
+            padding: 10px 20px;
+            color: white;
+            background-color: rgba(230, 74, 105, 0.553);
+            cursor: pointer;
+            border-radius: .4rem;
+            // margin-bottom: 1.5rem;
+            &:hover{
+                background-color: rgba(220, 20, 60, 0.796);
+            }
+        }
+    }
+}

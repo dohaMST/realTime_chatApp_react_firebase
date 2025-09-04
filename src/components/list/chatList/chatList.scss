@@ -1,0 +1,89 @@
+.chatList{
+    flex: 1;
+    overflow: auto;
+    /* Entire scrollbar */
+    &::-webkit-scrollbar {
+      width: 4px;      /* vertical scrollbar width */
+    }
+
+    /* Track (background) */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: .4rem;
+      overflow: hidden;
+    }
+
+    /* Thumb (the draggable part) */
+    &::-webkit-scrollbar-thumb {
+      background: #000000;
+      border-radius: .4rem;
+    }
+    .search{
+        display: flex;
+        // background-color: red;
+        padding: 1.25rem;
+        gap: 1.25rem;
+        align-items: center;
+        .searchBar{
+            flex: 1;
+            background-color: rgba(17, 25, 40, 0.5);
+            display: flex;
+            align-items: center;
+            border-radius: .4rem;
+            gap: 1.25rem;
+            padding: 10px;
+            img{
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+            input{
+                flex: 1;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                color: white;
+                &::placeholder{
+                    text-transform: capitalize;
+                    color: rgb(223, 223, 223);
+                }
+            }
+        }
+        img.add{
+            width: 2.25rem;
+            height: 2.25rem;
+            background-color: rgba(17, 25, 40, 0.5);
+            padding: 10px;
+            border-radius: .4rem;
+            cursor: pointer;
+            
+        }
+    }
+    .item{
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.25rem;
+        cursor: pointer;
+        border-bottom: 1px solid #dddddd35;
+        img{
+            width: 3.12rem;
+            height: 3.12rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .texts{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span{
+                font-weight: 500;
+            }
+            p{
+                font-size: 14px;
+
+            }
+        }
+    }
+}
