@@ -10,6 +10,7 @@ const App = () => {
       <List/>
       <Chat/>
       <Detail/>
+      test
     </div>
   )
 }
